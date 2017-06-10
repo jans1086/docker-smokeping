@@ -1,10 +1,10 @@
 *** Slaves ***
-secrets=/etc/smokeping/smokeping_secrets
-#+boomer
-#display_name=boomer
-#color=0000ff
+secrets=/config/smokeping_secrets
++slave-zituo
+display_name=slave-zituo
+color=0000ff
 
-#+slave2
-#display_name=another
-#color=00ff00
 
++slave-zituo1
+display_name=slave-zituo1
+color=0000ff
