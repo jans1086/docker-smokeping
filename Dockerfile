@@ -23,6 +23,11 @@ RUN \
 # fix path to cropper.js
  sed -i 's#src="/cropper/#/src="cropper/#' /etc/smokeping/basepage.html
 
+
+ENV TZ=Asia/Shanghai
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+
 # add local files
 COPY root/ /
 
