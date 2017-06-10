@@ -1,7 +1,7 @@
 *** Database ***
 
-step     = 300
-pings    = 20
+step     = 30
+pings    = 10
 
 # consfn mrhb steps total
 
@@ -12,4 +12,3 @@ AVERAGE  0.5  12  4320
 AVERAGE  0.5 144   720
     MAX  0.5 144   720
     MIN  0.5 144   720
-
