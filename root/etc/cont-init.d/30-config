@@ -8,7 +8,7 @@ mkdir -p \
 
 # copy config files
 
-echo "slave-zituo1:dobel" > /config/smokeping_secrets
+[[ ! -e "/config/smokeping_secrets" ]] && echo "slave-zituo:dobel" > /config/smokeping_secrets
 chmod 400 /config/smokeping_secrets
 
 PREV_DIR=$(pwd)
