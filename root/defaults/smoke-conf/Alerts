@@ -1,5 +1,5 @@
 *** Alerts ***
-to = alertee@address.somewhere
+to = |/bin/echo "alerts" >>/tmp/alerts.log
 from = smokealert@company.xy
 
 +someloss
@@ -8,3 +8,9 @@ type = loss
 pattern = >0%,*12*,>0%,*12*,>0%
 comment = loss 3 times  in a row
 
+
++hostdown
+type = loss
+# in percent
+pattern = ==0%,==0%,==0%, ==U
+comment = no reply
